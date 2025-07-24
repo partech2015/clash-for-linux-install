@@ -1,0 +1,14 @@
+# 这是一个用于与主配置文件合并的 mixin 配置
+# 例如，您可以设置 Web UI 密钥：
+# secret: "your_secret_key"
+# 或者启用/禁用 TUN 模式 (如果主配置中没有设置)：
+# tun:
+#   enable: true
+system-proxy:
+  enable: true
+
+allow-lan: false # 若开启务必设置用户验证以防暴露公网后被滥用
+
+external-controller: "0.0.0.0:9090"
+external-ui: public
+secret:666666

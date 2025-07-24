@@ -1,14 +1,10 @@
-# 系统代理配置
-system-proxy:
-  enable: true
-
 # Web 控制台配置
 external-controller: "0.0.0.0:9090"
 external-ui: public
 secret:
 
 # 代理服务器配置
-allow-lan: false # 若开启务必设置用户验证以防暴露公网后被滥用
+allow-lan: true # 若开启务必设置用户验证以防暴露公网后被滥用
 authentication:
   # - "username:password" # 用户验证（clashon 会自动填充验证信息）
 
@@ -18,7 +14,7 @@ rules:
 
 # tun 配置
 tun:
-  enable: false
+  enable: true
   stack: system
   auto-route: true
   auto-redir: true # clash
